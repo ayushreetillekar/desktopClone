@@ -81,10 +81,140 @@ function openAppWindow(folderName) {
     })
 }
 
- function footerFolderApp(folderName) {
-   
-    console.log(folderName.folder)
+
+
+
+document.querySelector('.folder-task').addEventListener('click', ()=>{
+    footerFolderApp();
+})
+function footerFolderApp() {
+
+    const Appwindow = document.querySelector('.app-window-container');
+
+    const newAppHtml = `
+          <div class="app-window" >
+                <div class="size-btns">
+                    <button class="minimize"><img src="images/remove.svg" width="30px" height="30px"></button>
+                    <button class="maximize"><img src="images/squre.svg" width="20px" height="20px"></button>
+                    <button class="none"> <img src="images/cross.svg" width="35px" height="35px"></button>
+                </div>
+                
+                    <iframe src="${'http://127.0.0.1:3000/DeckstopOS/appfolder/folder/'}" frameborder="0"></iframe>
+                
+         </div>`
+
+    Appwindow.insertAdjacentHTML("beforeend", newAppHtml);
+
+    document.addEventListener("click", function (e) {
+
+        let btn = e.target.closest("button");
+        if (!btn) return;
+
+        let win = btn.closest(".app-window");
+
+        if (btn.classList.contains("none")) {
+            win.remove();
+        }
+
+        if (btn.classList.contains("minimize")) {
+            const win = btn.closest(".app-window");
+            win.classList.toggle("minimize");
+        }
+        if (btn.classList.contains("maximize")) {
+            const win = btn.closest(".app-window");
+            win.classList.toggle("maximize");
+        }
+    })
 }
+document.querySelector('.camera-task').addEventListener('click', ()=>{
+    footercameraApp();
+})
+function footercameraApp() {
+
+    const Appwindow = document.querySelector('.app-window-container');
+
+    const newAppHtml = `
+          <div class="app-window" >
+                <div class="size-btns">
+                    <button class="minimize"><img src="images/remove.svg" width="30px" height="30px"></button>
+                    <button class="maximize"><img src="images/squre.svg" width="20px" height="20px"></button>
+                    <button class="none"> <img src="images/cross.svg" width="35px" height="35px"></button>
+                </div>
+                
+                    <iframe src="${'http://127.0.0.1:3000/DeckstopOS/appfolder/camera/'}" frameborder="0"></iframe>
+                
+         </div>`
+
+    Appwindow.insertAdjacentHTML("beforeend", newAppHtml);
+
+    document.addEventListener("click", function (e) {
+
+        let btn = e.target.closest("button");
+        if (!btn) return;
+
+        let win = btn.closest(".app-window");
+
+        if (btn.classList.contains("none")) {
+            win.remove();
+        }
+
+        if (btn.classList.contains("minimize")) {
+            const win = btn.closest(".app-window");
+            win.classList.toggle("minimize");
+        }
+        if (btn.classList.contains("maximize")) {
+            const win = btn.closest(".app-window");
+            win.classList.toggle("maximize");
+        }
+    })
+}
+document.querySelector('.chrome-task').addEventListener('click', ()=>{
+    footerchromeApp();
+})
+function footerchromeApp() {
+
+    const Appwindow = document.querySelector('.app-window-container');
+
+    const newAppHtml = `
+          <div class="app-window" >
+                <div class="size-btns">
+                    <button class="minimize"><img src="images/remove.svg" width="30px" height="30px"></button>
+                    <button class="maximize"><img src="images/squre.svg" width="20px" height="20px"></button>
+                    <button class="none"> <img src="images/cross.svg" width="35px" height="35px"></button>
+                </div>
+                
+                    <iframe src="${'http://127.0.0.1:3000/DeckstopOS/appfolder/chrome/'}" frameborder="0"></iframe>
+                
+         </div>`
+
+    Appwindow.insertAdjacentHTML("beforeend", newAppHtml);
+
+    document.addEventListener("click", function (e) {
+
+        let btn = e.target.closest("button");
+        if (!btn) return;
+
+        let win = btn.closest(".app-window");
+
+        if (btn.classList.contains("none")) {
+            win.remove();
+        }
+
+        if (btn.classList.contains("minimize")) {
+            const win = btn.closest(".app-window");
+            win.classList.toggle("minimize");
+        }
+        if (btn.classList.contains("maximize")) {
+            const win = btn.closest(".app-window");
+            win.classList.toggle("maximize");
+        }
+    })
+}
+
+
+
+
+
 
 windowBtn.addEventListener("click", () => {
     if (windowPageLoad.style.left == "-1000px") {
