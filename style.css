@@ -458,6 +458,9 @@
 
 
 @media screen and (max-width:788px) {
+    .container{
+        height : 90vh;
+    }
     .footer {
         width: 100%;
         display: flex;
@@ -502,5 +505,6 @@
         width: 80%;
         height: 70vh;
     }
+
 
 }
