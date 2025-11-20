@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 320px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, rgb(169, 169, 235) 0%, rgb(238, 170, 238) 50%, skyblue 100%);
+    padding: 20px 10px;
+    border: none;
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+.container:hover {
+    box-shadow: 1px 1px 1px 3px rgb(236, 129, 236);
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 4px 0;
+}
+
+.input-section input {
+    padding: 1px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 3px skyblue;
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    background-color: white;
+    color: rgb(61, 38, 4);
+}
+
+.input-section input:hover {
+    transform: translateY(2px);
+    box-shadow: 0 0 3px rgb(61, 173, 218);
+}
+
+.input-section button {
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 3px skyblue;
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    background-color: white;
+    color: rgb(61, 38, 4);
+}
+
+.input-section button:hover {
+    transform: translateY(2px);
+    box-shadow: 0 0 3px rgb(61, 173, 218);
+}
+.sky-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+}
+.hum-wind{
+    display: flex;
+    justify-content: space-around;
+}
