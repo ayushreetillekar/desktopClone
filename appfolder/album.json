@@ -1,0 +1,32 @@
+[
+    {
+        "folder": "appfolder/calculator",
+        "Name": "Calculator",
+        "cover": "appfolder/calculator/cover.svg"
+    },
+    {
+        "folder": "appfolder/camera",
+        "Name": "Camera",
+        "cover": "appfolder/camera/cover.svg"
+    },
+    {
+        "folder": "appfolder/chrome",
+        "Name": "Chrome",
+        "cover": "appfolder/chrome/cover.svg"
+    },
+    {
+        "folder": "appfolder/folder",
+        "Name": "Folder",
+        "cover": "appfolder/folder/cover.svg"
+    },
+    {
+        "folder": "appfolder/todolist",
+        "Name": "TODOlist",
+        "cover": "appfolder/todolist/cover.svg"
+    },
+    {
+        "folder": "appfolder/whetherApp",
+        "Name": "Weather",
+        "cover": "appfolder/whetherApp/cover.svg"
+    }
+]
